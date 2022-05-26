@@ -39,6 +39,7 @@ body {
 .main .seach .seach-left .seach-title {
   color: #999;
   font-size: 3.4667vw;
+  padding-left: 2.6667vw;
 }
 .main .seach .sign-in {
   height: 7.2vw;
