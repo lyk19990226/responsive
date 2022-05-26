@@ -1,0 +1,49 @@
+body {
+  font-size: 3.2vw;
+  -ms-overflow-style: none;
+}
+.nowrap-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.download {
+  display: flex;
+  height: 16vw;
+}
+.download .dl-left {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  overflow: hidden;
+}
+.download .dl-left img {
+  width: 10.6667vw;
+  height: 10.6667vw;
+  margin-right: 2.4vw;
+  margin-left: 3.2vw;
+  border-radius: 2.13333vw;
+  box-shadow: 0 0 0.93333vw 0 rgba(0, 0, 0, 0.15);
+}
+.download .dl-left .dl-desc {
+  flex: 1;
+  overflow: hidden;
+}
+.download .dl-left .dl-desc .top-title {
+  font-size: 3.7333vw;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.download .dl-left .dl-desc .top-subtitle {
+  font-size: 3.2vw;
+  color: #999 white-space: nowrap; overflow: hidden; text-overflow: ellipsis;;
+}
+.download .dl-right {
+  width: 25.2vw;
+  font-size: 4.2667vw;
+  line-height: 16vw;
+  text-align: center;
+  color: #fff;
+  background-image: linear-gradient(90deg, #ff0409, #ff3162);
+}

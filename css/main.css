@@ -1,0 +1,148 @@
+body {
+  font-size: 3.2vw;
+  -ms-overflow-style: none;
+}
+.nowrap-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.main {
+  background-color: #f5f5f5;
+}
+.main .seach {
+  display: flex;
+  align-items: center;
+  height: 10.6667vw;
+  background-color: #fff;
+}
+.main .seach .seach-left {
+  width: 74.1333vw;
+  height: 6.9333vw;
+  box-sizing: border-box;
+  line-height: 6.4vw;
+  margin-left: 3.2vw;
+  padding-left: 3vw;
+  border: 0.2667vw solid red;
+  border-radius: 4vw;
+}
+.main .seach .seach-left .seach-icon {
+  position: relative;
+  top: 0.4vw;
+  display: inline-block;
+  width: 3.2vw;
+  height: 3.33333vw;
+  background: url(../img/search_icon.png) center / contain no-repeat;
+}
+.main .seach .seach-left .seach-title {
+  color: #999;
+  font-size: 3.4667vw;
+}
+.main .seach .sign-in {
+  height: 7.2vw;
+  line-height: 7.2vw;
+  text-align: center;
+  padding: 0 1.8667vw;
+  margin-left: 2.1333vw;
+  border: 0.0625rem solid #e31436;
+  border-radius: 1.0667vw;
+  color: #e31436;
+}
+.main .icon-slider {
+  display: flex;
+}
+.main .icon-slider .item img {
+  width: 20vw;
+}
+.main .subsidy {
+  width: 93.6vw;
+  height: 44vw;
+  margin: 3.2vw;
+  border-radius: 3.2vw;
+  background-color: #fff;
+}
+.main .subsidy .subsidy-time {
+  position: relative;
+  display: flex;
+  height: 10.6667vw;
+  padding-left: 3.2vw;
+  align-items: center;
+}
+.main .subsidy .subsidy-time img {
+  width: 16.8vw;
+}
+.main .subsidy .subsidy-time .count-down {
+  margin-left: 1.6vw;
+  text-align: center;
+}
+.main .subsidy .subsidy-time .count-down .rax-text {
+  color: red;
+}
+.main .subsidy .subsidy-time .count-down .time {
+  display: inline-block;
+  width: 5.3333vw;
+  color: #fff;
+  background-color: red;
+  border-radius: 1.0667vw;
+}
+.main .subsidy .subsidy-time .subsidy-hf {
+  position: absolute;
+  right: 5.2vw;
+  color: red;
+}
+.main .subsidy .subsidy-time .subsidy-hf::after {
+  position: absolute;
+  content: '';
+  top: 1.4vw;
+  width: 1.2vw;
+  height: 1.2vw;
+  border-color: red red transparent transparent;
+  border-style: solid;
+  border-width: 0.2667vw;
+  transform: rotate(45deg);
+}
+.main .subsidy .subsidy-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+.main .subsidy .subsidy-list .item {
+  text-align: center;
+}
+.main .subsidy .subsidy-list .item img {
+  width: 20.93333vw;
+  height: 20.93333vw;
+}
+.main .subsidy .subsidy-list .item .present-price {
+  color: red;
+}
+.main .subsidy .subsidy-list .item .present-price .price {
+  font-size: 4vw;
+  font-weight: bold;
+}
+.main .subsidy .subsidy-list .item .original-price {
+  color: #999;
+  text-decoration: line-through;
+}
+.main .tabwrap {
+  display: flex;
+  margin: 0 2.6667vw;
+}
+.main .tabwrap .tabwrap-item {
+  width: 18.93333vw;
+  text-align: center;
+}
+.main .tabwrap .tabwrap-item .big-title {
+  font-size: 4.2667vw;
+  color: #666;
+}
+.main .tabwrap .tabwrap-item .desc {
+  color: #999;
+}
+.main .tabwrap .active .big-title {
+  color: #ff0000;
+}
+.main .tabwrap .active .desc {
+  color: #fff;
+  background-image: linear-gradient(90deg, red, #ff3164);
+  border-radius: 2.4vw;
+}
