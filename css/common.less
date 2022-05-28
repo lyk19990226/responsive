@@ -1,6 +1,6 @@
 body {
   font-size: 3.2vw;
-  -ms-overflow-style:none;
+  color: #333;
 }
 
 .nowrap-ellipsis {
@@ -9,4 +9,11 @@ body {
   text-overflow: ellipsis;
 }
 
-@moreColor:#999;
+.wrap-ellipsis {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+@moreColor: #999;
