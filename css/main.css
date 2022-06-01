@@ -1,4 +1,5 @@
 body {
+  overflow-x: hidden;
   font-size: 3.2vw;
   color: #333;
 }
@@ -25,6 +26,7 @@ body {
   align-items: center;
   height: 10.6667vw;
   background-color: #fff;
+  padding: 0 3.2vw;
 }
 .main .seach .seach-left {
   display: flex;
@@ -32,7 +34,6 @@ body {
   width: 74.1333vw;
   height: 6.9333vw;
   box-sizing: border-box;
-  margin-left: 3.2vw;
   padding-left: 3vw;
   border: 0.2667vw solid red;
   border-radius: 4vw;
@@ -54,11 +55,13 @@ body {
   height: 7.2vw;
   line-height: 7.2vw;
   text-align: center;
-  padding: 0 1.8667vw;
-  margin-left: 2.1333vw;
+  padding: 0 1.0667vw;
+  margin-left: 1.3333vw;
   border: 0.0625rem solid #e31436;
   border-radius: 1.0667vw;
   color: #e31436;
+  font-size: 3.2vw;
+  overflow: hidden;
 }
 .main .icon-slider {
   display: flex;

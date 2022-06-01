@@ -1,15 +1,24 @@
 body {
+  overflow-x: hidden;
   font-size: 3.2vw;
-  -ms-overflow-style: none;
+  color: #333;
 }
 .nowrap-ellipsis {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.wrap-ellipsis {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
 .download {
   display: flex;
   height: 16vw;
+  border-bottom: 0.13333vw solid #e3e3e3;
+  box-sizing: border-box;
 }
 .download .dl-left {
   display: flex;
@@ -37,7 +46,10 @@ body {
 }
 .download .dl-left .dl-desc .top-subtitle {
   font-size: 3.2vw;
-  color: #999 white-space: nowrap; overflow: hidden; text-overflow: ellipsis;;
+  color: #999;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .download .dl-right {
   width: 25.2vw;

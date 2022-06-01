@@ -1,5 +1,6 @@
 .tabbar {
   position: fixed;
+  z-index: 9999;
   bottom: 0;
   left: 0;
   right: 0;
@@ -11,6 +12,9 @@
   background-color: #fff;
   .tab-item {
     flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     img {
       width: 48px;
     }

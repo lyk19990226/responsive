@@ -1,17 +1,21 @@
 .tabbar {
   position: fixed;
+  z-index: 9999;
   bottom: 0;
   left: 0;
   right: 0;
   display: flex;
   justify-content: space-between;
-  height: calc(env(safe-area-inset-bottom) + 50px);
+  height: 50px;
   text-align: center;
   border-top: 1px solid #ddd;
   background-color: #fff;
 }
 .tabbar .tab-item {
   flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .tabbar .tab-item img {
   width: 48px;
