@@ -1,0 +1,39 @@
+@import url(./mixins.less);
+
+.search {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10.6667vw;
+  background-color: #fff;
+
+  .bar {
+    width: 74.6667vw;
+    height: 7.4667vw;
+    line-height: 7.4667vw;
+    box-sizing: border-box;
+    .red_border();
+    border-radius: 4vw;
+
+    .placeholder {
+      padding-left: 8vw;
+      color: #999;
+      font-size: 3.4667vw;
+      background: url(../img/search_icon.png) 3.2vw center/3.2vw 3.3333vw no-repeat;
+    }
+  }
+
+  .login {
+    width: 16vw;
+    height: 7.4667vw;
+    margin-left: 2.6667vw;
+    line-height: 7.4667vw;
+    .red_border();
+    border-radius: 1.3333vw;
+    font-size: 3.2vw;
+    text-align: center;
+    color: #e31436;
+  }
+}

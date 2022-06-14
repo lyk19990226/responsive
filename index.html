@@ -1,333 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,viewport-fit=cover">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>弘源海购-首页(仿)</title>
   <link rel="icon" href="./favicon.ico">
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/common.css">
-  <link rel="stylesheet" href="./css/download.css">
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="./css/tabbar.css">
-  <!-- <link rel="stylesheet/less" href="./css/tabbar.less">
-  <script src="./js/lessc.js"></script> -->
-  <title>海购</title>
+  <link rel="stylesheet/less" href="./css/reset.less">
+  <link rel="stylesheet/less" href="./css/common.less">
+  <link rel="stylesheet/less" href="./css/tabbar.less">
+  <link rel="stylesheet/less" href="./css/home.less">
+  <link rel="stylesheet/less" href="./css/home_download.less">
+  <link rel="stylesheet/less" href="./css/home_search.less">
+  <link rel="stylesheet/less" href="./css/home_recommend.less">
+  <link rel="stylesheet/less" href="./css/home_subsidy.less">
+  <link rel="stylesheet/less" href="./css/home_subsidy.less">
+  <link rel="stylesheet/less" href="./css/home_category.less">
+  <link rel="stylesheet/less" href="./css/home_product.less">
+  <script src="./js/lessc.js"></script>
 </head>
-
 <body>
-  <div class="download">
-    <div class="dl-left">
-      <img src="./img/logo.png" alt="">
-      <div class="dl-desc">
-        <p class="top-title">【考拉海购】官方自营 正品保障</p>
-        <p class="top-subtitle">下载APP新人可享125元购物礼包</p>
-      </div>
-    </div>
-    <div class="dl-right">
-      <span>打开APP</span>
-    </div>
-  </div>
+  
+  <!-- tabbar -->
   <div class="tabbar">
-    <div class="tab-item"><img src="./img/tabbar_home_active.png" alt=""></div>
-    <div class="tab-item"><img src="./img/tabbar_category.png" alt=""></div>
-    <div class="tab-item"><img src="./img/tabbar_cart.png" alt=""></div>
-    <div class="tab-item"><img src="./img/tabbar_profile.png" alt=""></div>
+    <div class="item">
+      <img src="./img/tabbar_home_active.png" alt="">
+    </div>
+    <div class="item">
+      <img src="./img/tabbar_category.png" alt="">
+    </div>
+    <div class="item">
+      <img src="./img/tabbar_cart.png" alt="">
+    </div>
+    <div class="item">
+      <img src="./img/tabbar_profile.png" alt="">
+    </div>
   </div>
 
-  <div class="main">
-    <div class="seach">
-      <div class="seach-left">
-        <span class="seach-icon"></span>
-        <span class="seach-title">在千万海外商品中搜索</span>
-      </div>
-      <div class="sign-in">
-        登录/注册
-      </div>
-    </div>
-    <div class="icon-slider">
-      <div class="item"><img src="./img/recommend_01.png" alt=""></div>
-      <div class="item"><img src="./img/recommend_02.png" alt=""></div>
-      <div class="item"><img src="./img/recommend_03.png" alt=""></div>
-      <div class="item"><img src="./img/recommend_04.png" alt=""></div>
-      <div class="item"><img src="./img/recommend_05.png" alt=""></div>
-    </div>
-    <div class="subsidy">
-      <div class="subsidy-time">
-        <img src="./img/subsidy.png" alt="">
-        <div class="count-down">
-          <span class="rax-text time">13</span>
-          <span class="rax-text">:</span>
-          <span class="rax-text time">14</span>
-          <span class="rax-text">:</span>
-          <span class="rax-text time">52</span>
+  <div class="home">
+    <!-- 下载部分 -->
+    <div class="download">
+      <div class="left">
+        <a class="logo" href="#">
+          <img src="./img/logo.png" alt="">
+        </a>
+        <div class="info">
+          <div class="title">【考拉海购】官方自营 正品保障</div>
+          <div class="desc">下载APP新人可享125元购物礼包</div>
         </div>
-        <div class="subsidy-hf">
+      </div>
+      <a class="right" href="#">打开APP</a>
+    </div>
+
+    <!-- 搜索功能 -->
+    <div class="search">
+      <div class="bar">
+        <div class="placeholder">
+          在千万海外商品中搜索
+        </div>
+      </div>
+      <div class="login">登录/注册</div>
+    </div> 
+
+    <!-- 推荐区域 -->
+    <div class="recommend">
+      <div class="item">
+        <img src="./img/recommend_01.png" alt="">
+      </div>
+      <div class="item">
+        <img src="./img/recommend_02.png" alt="">
+      </div>
+      <div class="item">
+        <img src="./img/recommend_03.png" alt="">
+      </div>
+      <div class="item">
+        <img src="./img/recommend_04.png" alt="">
+      </div>
+      <div class="item">
+        <img src="./img/recommend_05.png" alt="">
+      </div>
+    </div>
+
+    <!-- 补贴区域 -->
+    <div class="subsidy">
+      <div class="header">
+        <div class="left">
+          <img src="./img/subsidy.png" alt="">
+          <div class="countdown">
+            <span class="time">03</span>
+            <span class="split">:</span>
+            <span class="time">24</span>
+            <span class="split">:</span>
+            <span class="time">33</span>
+          </div>
+        </div>
+        <div class="right">
           大牌底价补贴
         </div>
       </div>
-      <div class="subsidy-list">
+      <div class="list">
         <div class="item">
           <img src="./img/subsidy_01.png" alt="">
-          <p class="present-price">硬核价￥<span class="price">946</span></p>
-          <span class="original-price">￥2833</span>
+          <div class="price">
+            <div class="new">
+              硬核价
+              <span class="unit">¥</span>
+              <span class="count">946</span>
+            </div>
+            <div class="old">¥2833</div> 
+          </div>
         </div>
         <div class="item">
           <img src="./img/subsidy_02.jpg" alt="">
-          <p class="present-price">硬核价￥<span class="price">599</span></p>
-          <span class="original-price">￥1999</span>
+          <div class="price">
+            <div class="new">
+              硬核价
+              <span class="unit">¥</span>
+              <span class="count">946</span>
+            </div>
+            <div class="old">¥2833</div> 
+          </div>
         </div>
         <div class="item">
           <img src="./img/subsidy_03.jpg" alt="">
-          <p class="present-price">硬核价￥<span class="price">299</span></p>
-          <span class="original-price">￥899</span>
+          <div class="price">
+            <div class="new">
+              硬核价
+              <span class="unit">¥</span>
+              <span class="count">946</span>
+            </div>
+            <div class="old">¥2833</div> 
+          </div>
         </div>
         <div class="item">
           <img src="./img/subsidy_04.png" alt="">
-          <p class="present-price">硬核价￥<span class="price">520</span></p>
-          <span class="original-price">￥1314</span>
+          <div class="price">
+            <div class="new">
+              硬核价
+              <span class="unit">¥</span>
+              <span class="count">946</span>
+            </div>
+            <div class="old">¥2833</div> 
+          </div>
         </div>
       </div>
-    </div>
+    </div> 
 
-    <div class="tabwrap">
-      <div class="tabwrap-item active">
-        <p class="big-title">精选</p>
-        <p class="desc">猜你喜欢</p>
+    <!-- 类别区域 -->
+    <div class="category">
+      <div class="item">
+        <div class="title">精选</div>
+        <div class="desc">猜你喜欢</div>
       </div>
-      <div class="tabwrap-item">
-        <p class="big-title">特惠</p>
-        <p class="desc">多买多省</p>
+      <div class="item">
+        <div class="title">特惠</div>
+        <div class="desc">多买多省</div>
       </div>
-      <div class="tabwrap-item">
-        <p class="big-title">美妆</p>
-        <p class="desc">魅力妆粉</p>
+      <div class="item">
+        <div class="title">美妆</div>
+        <div class="desc">魅力装扮</div>
       </div>
-      <div class="tabwrap-item">
-        <p class="big-title">母婴</p>
-        <p class="desc">家有萌宝</p>
+      <div class="item">
+        <div class="title">母婴</div>
+        <div class="desc">家有萌宝</div>
       </div>
-      <div class="tabwrap-item">
-        <p class="big-title">数码</p>
-        <p class="desc">酷玩科技</p>
+      <div class="item active">
+        <div class="title">数码</div>
+        <div class="desc">酷玩科技</div>
       </div>
-    </div>
-    <div class="commodity">
-      <div class="commodity-list">
-        <div class="item">
-          <img src="./img/product.jpg" alt="">
-          <div class="commodity-desc">
-            <div class="store-name">
-              <img src="./img/sony_icon01.png" alt="">
-              <span>雅诗兰黛</span>
-            </div>
-            <div class="product-detail">
-              <img src="./img/self_icon.png" alt="" srcset="">
-              【2022年新版】安热沙小金瓶防晒露60mlSPF50+ PA++++
-            </div>
-            <div class="label-list">
-              <span class="label-item">下单立减110元</span>
-              <span class="label-item">包税</span>
-            </div>
-            <div class="preferential">
-              优惠价￥<span>252</span>
-            </div>
+    </div> 
+
+    <!-- 商品列表 -->
+    <div class="product">
+      <div class="item">
+        <img src="./img/product_01.jpg" alt="">
+        <div class="info">
+          <div class="company">索尼</div>
+          <div class="desc">
+            Sony索尼 PlayStation5主机PS5游戏机 日版
+          </div>
+          <div class="tags discount">
+            <div class="tag ticket">满25减1</div>
+            <div class="tag">限时特卖</div>
+          </div>
+          <div class="price">
+            优惠价¥ <span class="money">4899</span>
           </div>
         </div>
-        <div class="item">
-          <img src="./img/product.jpg" alt="">
-          <div class="commodity-desc">
-            <div class="store-name">
-              <img src="./img/sony_icon01.png" alt="">
-              <span>雅诗兰黛</span>
-            </div>
-            <div class="product-detail">
-              <img src="./img/self_icon.png" alt="" srcset="">
-              【2022年新版】安热沙小金瓶防晒露60mlSPF50+ PA++++
-            </div>
-            <div class="label-list">
-              <span class="label-item">下单立减110元</span>
-              <span class="label-item">包税</span>
-            </div>
-            <div class="preferential">
-              优惠价￥<span>252</span>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="./img/product.jpg" alt="">
-          <div class="commodity-desc">
-            <div class="store-name">
-              <img src="./img/sony_icon01.png" alt="">
-              <span>雅诗兰黛</span>
-            </div>
-            <div class="product-detail">
-              <img src="./img/self_icon.png" alt="" srcset="">
-              【2022年新版】安热沙小金瓶防晒露60mlSPF50+ PA++++
-            </div>
-            <div class="label-list">
-              <span class="label-item">下单立减110元</span>
-              <span class="label-item">包税</span>
-            </div>
-            <div class="preferential">
-              优惠价￥<span>252</span>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="./img/product.jpg" alt="">
-          <div class="commodity-desc">
-            <div class="store-name">
-              <img src="./img/sony_icon01.png" alt="">
-              <span>雅诗兰黛</span>
-            </div>
-            <div class="product-detail">
-              <img src="./img/self_icon.png" alt="" srcset="">
-              【2022年新版】安热沙小金瓶防晒露60mlSPF50+ PA++++
-            </div>
-            <div class="label-list">
-              <span class="label-item">下单立减110元</span>
-              <span class="label-item">包税</span>
-            </div>
-            <div class="preferential">
-              优惠价￥<span>252</span>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="./img/product.jpg" alt="">
-          <div class="commodity-desc">
-            <div class="store-name">
-              <img src="./img/sony_icon01.png" alt="">
-              <span>雅诗兰黛</span>
-            </div>
-            <div class="product-detail">
-              <img src="./img/self_icon.png" alt="" srcset="">
-              【2022年新版】安热沙小金瓶防晒露60mlSPF50+ PA++++
-            </div>
-            <div class="label-list">
-              <span class="label-item">下单立减110元</span>
-              <span class="label-item">包税</span>
-            </div>
-            <div class="preferential">
-              优惠价￥<span>252</span>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="./img/product.jpg" alt="">
-          <div class="commodity-desc">
-            <div class="store-name">
-              <img src="./img/sony_icon01.png" alt="">
-              <span>雅诗兰黛</span>
-            </div>
-            <div class="product-detail">
-              <img src="./img/self_icon.png" alt="" srcset="">
-              【2022年新版】安热沙小金瓶防晒露60mlSPF50+ PA++++
-            </div>
-            <div class="label-list">
-              <span class="label-item">下单立减110元</span>
-              <span class="label-item">包税</span>
-            </div>
-            <div class="preferential">
-              优惠价￥<span>252</span>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="./img/product.jpg" alt="">
-          <div class="commodity-desc">
-            <div class="store-name">
-              <img src="./img/sony_icon01.png" alt="">
-              <span>雅诗兰黛</span>
-            </div>
-            <div class="product-detail">
-              <img src="./img/self_icon.png" alt="" srcset="">
-              【2022年新版】安热沙小金瓶防晒露60mlSPF50+ PA++++
-            </div>
-            <div class="label-list">
-              <span class="label-item">下单立减110元</span>
-              <span class="label-item">包税</span>
-            </div>
-            <div class="preferential">
-              优惠价￥<span>252</span>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="./img/product.jpg" alt="">
-          <div class="commodity-desc">
-            <div class="store-name">
-              <img src="./img/sony_icon01.png" alt="">
-              <span>雅诗兰黛</span>
-            </div>
-            <div class="product-detail">
-              <img src="./img/self_icon.png" alt="" srcset="">
-              【2022年新版】安热沙小金瓶防晒露60mlSPF50+ PA++++
-            </div>
-            <div class="label-list">
-              <span class="label-item">下单立减110元</span>
-              <span class="label-item">包税</span>
-            </div>
-            <div class="preferential">
-              优惠价￥<span>252</span>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="./img/product.jpg" alt="">
-          <div class="commodity-desc">
-            <div class="store-name">
-              <img src="./img/sony_icon01.png" alt="">
-              <span>雅诗兰黛</span>
-            </div>
-            <div class="product-detail">
-              <img src="./img/self_icon.png" alt="" srcset="">
-              【2022年新版】安热沙小金瓶防晒露60mlSPF50+ PA++++
-            </div>
-            <div class="label-list">
-              <span class="label-item">下单立减110元</span>
-              <span class="label-item">包税</span>
-            </div>
-            <div class="preferential">
-              优惠价￥<span>252</span>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="./img/product.jpg" alt="">
-          <div class="commodity-desc">
-            <div class="store-name">
-              <img src="./img/sony_icon01.png" alt="">
-              <span>雅诗兰黛</span>
-            </div>
-            <div class="product-detail">
-              <img src="./img/self_icon.png" alt="" srcset="">
-              【2022年新版】安热沙小金瓶防晒露60mlSPF50+ PA++++
-            </div>
-            <div class="label-list">
-              <span class="label-item">下单立减110元</span>
-              <span class="label-item">包税</span>
-            </div>
-            <div class="preferential">
-              优惠价￥<span>252</span>
-            </div>
-          </div>
-        </div>
-        
-         
       </div>
-    </div>
-    <!-- <div class="box">
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-    </div> -->
+      <div class="item">
+        <img src="./img/product_02.jpg" alt="">
+        <div class="info">
+          <div class="company">Apple</div>
+          <div class="desc">
+            Sony索尼 PlayStation5主机PS5游戏机 日版
+          </div>
+          <div class="tags discount">
+            <div class="tag">限时特卖</div>
+          </div>
+          <div class="price">
+            优惠价¥ <span class="money">4899</span>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="./img/product_03.jpg" alt="">
+        <div class="info">
+          <div class="company">索尼</div>
+          <div class="desc">
+            Sony索尼 PlayStation5主机PS5游戏机 日版
+          </div>
+          <div class="tags discount">
+          </div>
+          <div class="price">
+            优惠价¥ <span class="money">4899</span>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="./img/product_04.jpg" alt="">
+        <div class="info">
+          <div class="company">索尼</div>
+          <div class="desc">
+            Sony索尼 PlayStation5主机PS5游戏机 日版
+          </div>
+          <div class="tags discount">
+            <div class="tag ticket">满25减1</div>
+            <div class="tag">限时特卖</div>
+          </div>
+          <div class="price">
+            优惠价¥ <span class="money">4899</span>
+          </div>
+        </div>
+      </div>
+    </div> 
   </div>
-  <div class="fixedBox"></div>
-</body>
 
+</body>
 </html>
