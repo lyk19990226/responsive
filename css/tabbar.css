@@ -26,3 +26,11 @@ body {
   padding-bottom: env(safe-area-inset-bottom);
   /* 兼容 iOS >= 11.2 */
 }
+.fixedBox {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: constant(safe-area-inset-bottom);
+  height: env(safe-area-inset-bottom);
+  background-color: #fff;
+}
